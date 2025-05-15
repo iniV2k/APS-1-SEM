@@ -1,20 +1,82 @@
+/* FORMATAÇÃO GERAL */
 main {
     padding: 3%;
     border-radius: 0;
+}
+
+/*  BARRA DE NAVEGAÇÃO GERAL */
+nav {
+    background-color: #f4efec;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    color: #2e7d32;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
 }
 
 nav {
     border-radius: 10px 10px 0 0;
 }
 
+/* RODAPÉ GERAL */
 footer {
-    border-radius: 0 0 10px 10px;
+    background-color: #b2dfdb;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-column strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-column span {
+    display: block;
+    margin-bottom: 5px;
+    color: #004d40;
+}
+
+
+/* CABEÇALHO GERAL */
 .header-container {
     border-radius: 0;
 }
 
+/* RESPONSIVIDADE GERAL */
 @media (min-width: 768px) {
     main, header, footer, hr {
         margin: 0 10% 0 10%;
@@ -28,4 +90,9 @@ footer {
     footer {
         padding: 20px 110px;
     }
+
+    .imagem-texto-lado-a-lado {
+        padding-left: 50px;
+    }
+
 }

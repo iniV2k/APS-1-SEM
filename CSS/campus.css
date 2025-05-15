@@ -1,10 +1,11 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ESTILOS DO BODY */
+/* BODY */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -13,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* Container com imagem e texto lado a lado */
+/* CONTAINER COM IMAGEM E TEXTO */
 .header-container {
     display: flex;
     align-items: center;
@@ -25,7 +26,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* Imagem do banner (logo UNIP) */
+/* IMAGEM DO BANNER */
 .header-image {
     max-width: 40%;
     height: auto;
@@ -34,7 +35,7 @@ body {
     padding: 10px;
 }
 
-/* Texto ao lado da imagem */
+/* TEXTO DO CABEÇALHO */
 .header-text {
     color: white;
     display: flex;
@@ -51,48 +52,12 @@ body {
     line-height: 1.2;
 }
 
-/* NAVBAR */
-nav {
-    background-color: #f4efec;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 40px;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-nav ul li:nth-child(1) a,
-nav ul li:nth-child(2) a,
-nav ul li:nth-child(3) a,
-nav ul li:nth-child(4) a {
-    color: #2e7d32;
-}
-
-nav ul li a:hover {
-    opacity: 0.7;
-}
-
 /* CONTEÚDO PRINCIPAL */
 main {
     background-color: #e7d9c4;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 h1, h2 {
@@ -136,7 +101,7 @@ strong {
     margin: 30px auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     background: #fff;
 }
 
@@ -170,6 +135,7 @@ strong {
     box-shadow: 0 4px 6px rgba(0, 150, 136, 0.3);
 }
 
+/* BOTÕES DO CARROSSEL */
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -202,7 +168,7 @@ strong {
     outline: 2px solid #004d40;
 }
 
-/* responsividade */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -265,7 +231,7 @@ strong {
     }
 }
 
-/* footer */
+/* FOOTER */
 footer {
     background-color: #b2dfdb;
     padding: 20px;

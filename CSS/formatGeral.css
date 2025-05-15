@@ -1,0 +1,31 @@
+main {
+    padding: 3%;
+    border-radius: 0;
+}
+
+nav {
+    border-radius: 10px 10px 0 0;
+}
+
+footer {
+    border-radius: 0 0 10px 10px;
+}
+
+.header-container {
+    border-radius: 0;
+}
+
+@media (min-width: 768px) {
+    main, header, footer, hr {
+        margin: 0 10% 0 10%;
+    }
+
+    p, ul, h1, h2 {
+    text-align: justify;
+    padding: 0 50px;
+}
+
+    footer {
+        padding: 20px 110px;
+    }
+}

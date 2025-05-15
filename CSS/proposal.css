@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY GERAL */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #d1d1d1;
+    color: #333;
+    padding: 20px;
+}
+
+/* CABEÇALHO */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #b4c9ce;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.header-image {
+    max-width: 20%;
+    height: auto;
+}
+
+.header-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.iniciativa {
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    user-select: none;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #f4efec;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #2e7d32;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    background-color: #e7d9c4;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2 {
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #00796b;
+}
+
+/* IMAGEM + TEXTO LADO A LADO */
+.imagem-texto-lado-a-lado {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.imagem-texto-lado-a-lado figure {
+    margin: 0;
+    width: 30%;
+    min-width: 200px;
+}
+
+.imagem-texto-lado-a-lado p {
+    flex: 1;
+    min-width: 250px;
+}
+
+.img-menor {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* FIGURAS COMUNS */
+figure {
+    margin: 30px 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 55%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #b2dfdb;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-column span {
+    display: block;
+    margin-bottom: 5px;
+    color: #004d40;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .header-image {
+        max-width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .iniciativa {
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .imagem-texto-lado-a-lado {
+        flex-direction: column;
+    }
+
+    .imagem-texto-lado-a-lado figure,
+    .imagem-texto-lado-a-lado p {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+}

@@ -98,8 +98,6 @@
         </section>
     </main>
 
-    <!-- Adicionar paginação -->
-
     <hr>
 
     <footer>
@@ -121,33 +119,10 @@
                 <span>Turma - SI1P13</span>
             </div>
         </div>
-        </footer>
-    <script>
-        const track = document.querySelector('.carousel-track');
-        const figures = Array.from(track.children);
-        const prevBtn = document.querySelector('.carousel-btn.prev');
-        const nextBtn = document.querySelector('.carousel-btn.next');
+    </footer>
 
-        let currentIndex = 0;
-
-        function updateCarousel() {
-            const slideWidth = figures[0].getBoundingClientRect().width;
-            track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-        }
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % figures.length;
-            updateCarousel();
-        });
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + figures.length) % figures.length;
-            updateCarousel();
-        });
-
-        window.addEventListener('resize', updateCarousel);
-        window.addEventListener('load', updateCarousel);
-    </script>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+    <script src="/JS/script.js"></script>
 </body>
 
 </html>

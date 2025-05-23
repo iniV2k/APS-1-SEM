@@ -1,3 +1,4 @@
+// Botão que retorna para a parte superior da página
 document.addEventListener("DOMContentLoaded", () => {
     const btnTopo = document.getElementById("btnTopo");
 
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    // O trecho abaixo é para o carousel, que você não parece estar usando ainda nessa página.
+    // Carrossel
     const track = document.querySelector('.carousel-track');
     if (track) {
         const figures = Array.from(track.children);
